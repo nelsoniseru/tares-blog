@@ -6,16 +6,16 @@ import cookieParser from 'cookie-parser';
 import multer from 'multer';
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://127.0.0.1:27017/job-portal', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
- const db = mongoose.connection;
+// mongoose.connect('mongodb://127.0.0.1:27017/job-portal', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+//  const db = mongoose.connection;
 
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
-  console.log('Connected to MongoDB');
-});
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', function () {
+//   console.log('Connected to MongoDB');
+// });
 
 
 
